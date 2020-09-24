@@ -5,7 +5,7 @@ import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.buffer.Unpooled;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/8.
+ * Created by ææ—å³° on 2018/8/8.
  */
 public class PoolByteBufPerformanceTest {
 
@@ -16,7 +16,7 @@ public class PoolByteBufPerformanceTest {
     }
     static void unPoolTest()
     {
-        //·ÇÄÚ´æ³ØÄ£Ê½
+        //éå†…å­˜æ± æ¨¡å¼
         long beginTime = System.currentTimeMillis();
         ByteBuf buf = null;
         int maxTimes = 100000000;
@@ -31,7 +31,7 @@ public class PoolByteBufPerformanceTest {
 
     static void poolTest()
     {
-        //ÄÚ´æ³ØÄ£Ê½
+        //å†…å­˜æ± æ¨¡å¼
         PooledByteBufAllocator allocator = new PooledByteBufAllocator(false);
         long beginTime = System.currentTimeMillis();
         ByteBuf buf = null;

@@ -23,7 +23,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/11.
+ * Created by ææ—å³° on 2018/8/11.
  */
 @Sharable
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {

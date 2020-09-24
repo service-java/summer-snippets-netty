@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by ���ַ� on 2018/8/18.
+ * Created by 李林峰 on 2018/8/18.
  */
 public class IotCarsDiscardServerHandler extends ChannelInboundHandlerAdapter {
     static AtomicInteger sum  = new AtomicInteger(0);
@@ -38,18 +38,18 @@ public class IotCarsDiscardServerHandler extends ChannelInboundHandlerAdapter {
         executorService.execute(()->
         {
             ByteBuf req = (ByteBuf) msg;
-            //����ҵ���߼��������������ݿ�
+            //其它业务逻辑处理，访问数据库
             if (sum.get() % 100 == 0 || (Thread.currentThread()== ctx.channel().eventLoop()))
                 try
                 {
-                    //�������ݿ⣬ģ��ż�ֵ����ݿ�����ͬ������15��
+                    //访问数据库，模拟偶现的数据库慢，同步阻塞15秒
                     TimeUnit.SECONDS.sleep(15);
                 }
                 catch (Exception e)
                 {
                     e.printStackTrace();
                 }
-            //ת����Ϣ���˴�����ʡ�ԣ�ת���ɹ�֮�󷵻���Ӧ���ն�
+            //转发消息，此处代码省略，转发成功之后返回响应给终端
             ctx.writeAndFlush(req);
         });
     }

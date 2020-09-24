@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/3.
+ * Created by ææ—å³° on 2018/8/3.
  */
 public class DaemonT1 {
     public static void main(String[] args)
@@ -20,5 +20,5 @@ public class DaemonT1 {
         t.setDaemon(true);
         t.start();
         TimeUnit.SECONDS.sleep(15);
-        System.out.println("ÏµÍ³ÍË³ö£¬³ÌĞòÖ´ĞĞ" +(System.nanoTime() - startTime)/1000/1000/1000 + " s");}
+        System.out.println("ç³»ç»Ÿé€€å‡ºï¼Œç¨‹åºæ‰§è¡Œ" +(System.nanoTime() - startTime)/1000/1000/1000 + " s");}
 }

@@ -3,7 +3,7 @@ package io.netty.cases.chapter.demo1;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/3.
+ * Created by ææ—å³° on 2018/8/3.
  */
 public class Shutdown1 {
 

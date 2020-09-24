@@ -11,7 +11,7 @@ import io.netty.handler.logging.LoggingHandler;
 import java.util.logging.Logger;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/3.
+ * Created by ææ—å³° on 2018/8/3.
  */
 public class EchoExitServer2 {
 
@@ -36,8 +36,8 @@ public class EchoExitServer2 {
             f.channel().closeFuture().addListener(new ChannelFutureListener() {
                 @Override
                 public void operationComplete(ChannelFuture future) throws Exception {
-                    //ÒµÎñÂß¼­´¦Àí´úÂë£¬´Ë´¦Ê¡ÂÔ...
-                    logger.info(future.channel().toString() + " Á´Â·¹Ø±Õ");
+                    //ä¸šåŠ¡é€»è¾‘å¤„ç†ä»£ç ï¼Œæ­¤å¤„çœç•¥...
+                    logger.info(future.channel().toString() + " é“¾è·¯å…³é—­");
                 }
             });
         } finally {

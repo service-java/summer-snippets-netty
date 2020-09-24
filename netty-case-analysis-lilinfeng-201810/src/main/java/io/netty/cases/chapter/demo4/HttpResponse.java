@@ -7,7 +7,7 @@ import io.netty.handler.codec.http.FullHttpResponse;
 import io.netty.handler.codec.http.HttpHeaders;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/11.
+ * Created by ææ—å³° on 2018/8/11.
  */
 public class HttpResponse {
 	

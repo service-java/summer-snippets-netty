@@ -16,7 +16,7 @@ import io.netty.util.concurrent.DefaultPromise;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/11.
+ * Created by ææ—å³° on 2018/8/11.
  */
 public class HttpClient {
 

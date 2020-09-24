@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/19.
+ * Created by ææ—å³° on 2018/8/19.
  */
 public class ConcurrentPerformanceServerHandler extends ChannelInboundHandlerAdapter {
     AtomicInteger counter = new AtomicInteger(0);
@@ -44,7 +44,7 @@ public class ConcurrentPerformanceServerHandler extends ChannelInboundHandlerAda
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         ((ByteBuf)msg).release();
         counter.incrementAndGet();
-        //ÒµÎñÂß¼­´¦Àí£¬Ä£ÄâÒµÎñ·ÃÎÊDB¡¢»º´æµÈ£¬Ê±ÑÓ´Ó100-1000ºÁÃëÖ®¼ä²»µÈ
+        //ä¸šåŠ¡é€»è¾‘å¤„ç†ï¼Œæ¨¡æ‹Ÿä¸šåŠ¡è®¿é—®DBã€ç¼“å­˜ç­‰ï¼Œæ—¶å»¶ä»100-1000æ¯«ç§’ä¹‹é—´ä¸ç­‰
         Random random = new Random();
         try
         {

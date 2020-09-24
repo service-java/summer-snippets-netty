@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/19.
+ * Created by ææ—å³° on 2018/8/19.
  */
 @ChannelHandler.Sharable
 public class ConcurrentPerformanceServerHandlerV2 extends ChannelInboundHandlerAdapter {
@@ -51,7 +51,7 @@ public class ConcurrentPerformanceServerHandlerV2 extends ChannelInboundHandlerA
         executorService.execute(()->
         {
             counter.incrementAndGet();
-            //ÒµÎñÂß¼­´¦Àí£¬Ä£ÄâÒµÎñ·ÃÎÊDB¡¢»º´æµÈ£¬Ê±ÑÓ´Ó100-1000ºÁÃëÖ®¼ä²»µÈ
+            //ä¸šåŠ¡é€»è¾‘å¤„ç†ï¼Œæ¨¡æ‹Ÿä¸šåŠ¡è®¿é—®DBã€ç¼“å­˜ç­‰ï¼Œæ—¶å»¶ä»100-1000æ¯«ç§’ä¹‹é—´ä¸ç­‰
             Random random = new Random();
             try
             {
@@ -66,7 +66,7 @@ public class ConcurrentPerformanceServerHandlerV2 extends ChannelInboundHandlerA
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
         if (evt == SslHandshakeCompletionEvent.SUCCESS) {
-            //Ö´ĞĞÁ÷¿ØÂß¼­
+            //æ‰§è¡Œæµæ§é€»è¾‘
         }
     }
 

@@ -16,7 +16,7 @@ import static io.netty.handler.codec.http.HttpResponseStatus.BAD_REQUEST;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/11.
+ * Created by ææ—å³° on 2018/8/11.
  */
 public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 

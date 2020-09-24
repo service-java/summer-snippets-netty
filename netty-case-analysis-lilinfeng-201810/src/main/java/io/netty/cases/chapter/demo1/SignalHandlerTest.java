@@ -6,13 +6,13 @@ import sun.misc.SignalHandler;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/3.
+ * Created by æŽæž—å³° on 2018/8/3.
  */
 public class SignalHandlerTest {
 
     public static void main(String [] args) throws Exception
     {
-        Signal sig = new Signal("INT");//ÒÔwindows²Ù×÷ÏµÍ³ÎªÀý
+        Signal sig = new Signal("INT");//ä»¥windowsæ“ä½œç³»ç»Ÿä¸ºä¾‹
         Signal.handle(sig, (s)->{
             System.out.println("Signal handle start...");
             try {

@@ -12,7 +12,7 @@ import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/3.
+ * Created by ææ—å³° on 2018/8/3.
  */
 public class EchoExitServer1 {
 

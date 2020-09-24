@@ -3,7 +3,7 @@ package io.netty.cases.chapter.demo1;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by ÀîÁÖ·å on 2018/8/3.
+ * Created by ææ—å³° on 2018/8/3.
  */
 public class DaemonT2 {
     public static void main(String[] args)
@@ -20,5 +20,5 @@ public class DaemonT2 {
         t.setDaemon(false);
         t.start();
         TimeUnit.SECONDS.sleep(15);
-        System.out.println("mainÏß³ÌÍË³ö£¬³ÌĞòÖ´ĞĞ" +(System.nanoTime() - startTime)/1000/1000/1000 + " s");}
+        System.out.println("mainçº¿ç¨‹é€€å‡ºï¼Œç¨‹åºæ‰§è¡Œ" +(System.nanoTime() - startTime)/1000/1000/1000 + " s");}
 }
